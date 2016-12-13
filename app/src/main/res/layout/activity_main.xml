@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_text"
+    tools:context="com.example.manjeinc.manje.MainActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:text="Manje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/manje"
+        android:layout_gravity="center"
+        android:textSize="60sp"
+        android:textColor="@color/primary"
+        android:layout_margin="30dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:text="@string/e_mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/primary"
+        android:id="@+id/textEmail"
+        tools:ignore="RtlHardcoded" />
+
+    <EditText
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/email"
+        android:background="@drawable/redondeo"
+        tools:ignore="LabelFor"
+        android:layout_gravity="center"
+        android:layout_margin="20dp" />
+
+    <TextView
+        android:text="Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/primary"
+        android:id="@+id/textPassword"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/password"
+        style="@android:style/Widget.AutoCompleteTextView"
+        android:selectAllOnFocus="false"
+        android:background="@drawable/redondeo"
+        android:layout_width="260dp"
+        tools:ignore="LabelFor"
+        android:layout_gravity="center"
+        android:layout_margin="20dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="@string/sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonSign"
+            android:layout_weight="1"
+            android:backgroundTint="@color/primary"
+            android:textColor="@color/primary_text"
+            tools:ignore="ButtonStyle"
+            android:visibility="visible" />
+
+        <Button
+            android:text="@string/log_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonLog"
+            android:layout_weight="1"
+            android:backgroundTint="@color/primary_text"
+            android:textColor="@color/primary"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
+
+
+</LinearLayout>
