@@ -7,7 +7,8 @@
     android:layout_height="match_parent"
     android:background="@color/primary_text"
     tools:context="com.example.manjeinc.manje.MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:weightSum="1">
 
 
     <TextView
@@ -32,7 +33,7 @@
         tools:ignore="RtlHardcoded" />
 
     <EditText
-        android:layout_width="260dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
         android:ems="10"
@@ -40,7 +41,7 @@
         android:background="@drawable/redondeo"
         tools:ignore="LabelFor"
         android:layout_gravity="center"
-        android:layout_margin="20dp" />
+        android:layout_margin="15dp" />
 
     <TextView
         android:text="Password"
@@ -60,37 +61,33 @@
         style="@android:style/Widget.AutoCompleteTextView"
         android:selectAllOnFocus="false"
         android:background="@drawable/redondeo"
-        android:layout_width="260dp"
+        android:layout_width="300dp"
         tools:ignore="LabelFor"
         android:layout_gravity="center"
-        android:layout_margin="20dp" />
+        android:layout_margin="15dp" />
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    <Button
+        android:text="Sign in"
+        android:layout_width="235dp"
+        android:layout_height="53dp"
+        android:layout_gravity="center"
+        android:id="@+id/buttonSign"
+        android:layout_margin="10dp"
+        android:background="@drawable/style_btn_2"
+        android:textColor="@color/primary_text"
+        android:textSize="20dp"
+        tools:ignore="HardcodedText" />
 
-        <Button
-            android:text="@string/sign_in"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/buttonSign"
-            android:layout_weight="1"
-            android:backgroundTint="@color/primary"
-            android:textColor="@color/primary_text"
-            tools:ignore="ButtonStyle"
-            android:visibility="visible" />
-
-        <Button
-            android:text="@string/log_in"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/buttonLog"
-            android:layout_weight="1"
-            android:backgroundTint="@color/primary_text"
-            android:textColor="@color/primary"
-            tools:ignore="ButtonStyle" />
-    </LinearLayout>
+    <Button
+        android:text="Log in"
+        android:layout_width="235dp"
+        android:layout_height="53dp"
+        android:layout_gravity="center"
+        android:id="@+id/buttonLog"
+        android:background="@drawable/style_btn_1"
+        android:textColor="@color/primary"
+        android:textSize="20dp"
+        tools:ignore="HardcodedText" />
 
 
 </LinearLayout>
